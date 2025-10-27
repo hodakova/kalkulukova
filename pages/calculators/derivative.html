@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulukova: Fun with Calculus!</title>
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="icon" type="image/png" href="../../assets/kalkulukova.jpg">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="app-icon-container">
+                    <a href="../home.html">
+                        <img src="../../assets/kalkulukova.jpg" alt="Kalkulukova Icon" class="app-icon">
+                    </a>
+                    <a href="../home.html" class="app-name">Kalkulukova</a>
+                </div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../topics.html">Topics</a></li>
+                    <li><a href="../calculators.html">Calculators</a></li>
+                    <li><a href="../quizzes.html">Quizzes</a></li>
+                    <!--
+                    <li id="navbarRanking" style="display: none;"><a href="../rangking.html">Ranking</a></li>
+                    <li id="navbarProgress" style="display: none;"><a href="../progress.html">Progress</a></li>
+                    -->
+                    <li id="navbarLogin" class="navbar-login" style="display: block"><a href="../login.html">Login</a></li>
+                </ul>
+
+                <div class="right-side-navbar">
+                    <div class="hamburger-menu" id="hamburger-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <a href="../account.html" class="navbar-profile" id="navbarProfile" style="display: none">
+                        <div class="profile-icon-wrapper">
+                            <img src="../../assets/profile.png" alt="Profile Icon" class="profile-icon default" id="profileIcon">
+                        </div>
+                    </a>
+                </div>            
+            </nav>
+        </header>
+
+        <section class="content-section">
+            <h1 class="topic-derivative-title">Kalkulukalkulator: Derivative</h1>
+
+            <div class="topic-derivative-background" style="padding-bottom: 15.69px">
+                <div class="topic-content">
+                    <div class="calculator" id="derivative">
+                        <div class="calculator-action">
+                            <div class="calculator-input-container">
+                                <label class="cal" for="derivative-function">Function</label>
+                                <label class="eq" for="derivative-function">f(x)</label>
+
+                                <input type="text" id="derivative-function" placeholder="(e.g., x^2)">
+                            </div>
+
+                            <button id="calculate-derivative">
+                                <p class="cal">Calculate Derivative</p>
+                                <p class="eq">=</p>
+                            </button>
+                        </div>
+                        
+                        <div id="derivative-result" class="calculator-result">‎</div>
+
+                        <p class="calculator-result-graph-title">Graph:</p>
+
+                        <div class="calculator-result-graph-wrapper" style="margin-bottom: 1.5rem">
+                            <canvas class="calculator-result-graph" id="derivative-graph-original"></canvas>
+                            <div class="calculator-result-graph-placeholder" id="derivative-graph-original-placeholder">
+                                <p class="derivative-title">Function Graph</p>
+                            </div>
+                        </div>
+                        <div class="calculator-result-graph-wrapper">
+                            <canvas class="calculator-result-graph" id="derivative-graph-derived"></canvas>
+                            <div class="calculator-result-graph-placeholder" id="derivative-graph-derived-placeholder">
+                                <p class="derivative-title">Derived Function Graph</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-derivative-background" id="history" style="display: none">
+                <div class="topic-content">
+                    <h2>History</h2>
+                    <div class="calculator-history-item-container" id="historyItemContainer"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="alert-popup-overlay" id="alertPopup">
+            <div class="alert-popup-content">
+                <h2 class="alert-title" id="alertTitle">‍</h2>
+                <p class="alert-message" id="alertMessage">‍</p>
+                <button class="alert-popup-ok-button" id="alertPopupOKButton">Okay</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Kalkulukova | Created by <a href="https://github.com/hodakova">hodakova</a></p>
+        </footer>
+
+        <script src="../../scripts/navbar_hamburger_bar.js"></script>
+        <script src="../../scripts/navbar_profile_icon.js" type="module"></script>
+        <script src="../../scripts/calculator.js" type="module"></script>
+    </body>
+</html>

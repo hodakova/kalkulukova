@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulukova: Fun with Calculus!</title>
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="icon" type="image/png" href="../../assets/kalkulukova.jpg">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="app-icon-container">
+                    <a href="../home.html">
+                        <img src="../../assets/kalkulukova.jpg" alt="Kalkulukova Icon" class="app-icon">
+                    </a>
+                    <a href="../home.html" class="app-name">Kalkulukova</a>
+                </div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../topics.html">Topics</a></li>
+                    <li><a href="../calculators.html">Calculators</a></li>
+                    <li><a href="../quizzes.html">Quizzes</a></li>
+                    <!--
+                    <li id="navbarRanking" style="display: none;"><a href="../rangking.html">Ranking</a></li>
+                    <li id="navbarProgress" style="display: none;"><a href="../progress.html">Progress</a></li>
+                    -->
+                    <li id="navbarLogin" class="navbar-login" style="display: block"><a href="../login.html">Login</a></li>
+                </ul>
+
+                <div class="right-side-navbar">
+                    <div class="hamburger-menu" id="hamburger-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <a href="../account.html" class="navbar-profile" id="navbarProfile" style="display: none">
+                        <div class="profile-icon-wrapper">
+                            <img src="../../assets/profile.png" alt="Profile Icon" class="profile-icon default" id="profileIcon">
+                        </div>
+                    </a>
+                </div>            
+            </nav>
+        </header>
+
+        <section class="content-section">
+            <h1 class="topic-integral-title">Kalkulutaufiq: Integral</h1>
+
+            <div class="topic-integral-background">
+                <div class="topic-content">
+                    <p>An integral is the space under a graph of an equation. An integral is the reverse of a derivative, and integral calculus is the opposite of differential calculus. A derivative is the steepness, as the rate of change, of a curve.</p>
+                    <p>The symbol for integration, in calculus, is: \(\int\) as a tall letter "S".</p>
+                    <p>Integrals and derivatives are part of a branch of mathematics called calculus. The link between these two is very important, and is called the fundamental theorem of calculus. The theorem says that an integral can be reversed by a derivative, similar to how an addition can be reversed by a subtraction.</p>
+                    <div class="topic-content-media">
+                        <iframe class="topic-content-media-iframe"
+                            src="https://youtube.com/embed/rfG8ce4nNh0?si=J2-MC61tRmD-QmtF" 
+                            title="Limit Video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>       
+            </div>
+
+            <div class="topic-integral-background">
+                <div class="topic-content">
+                    <h2>Definition</h2>
+                    <p>The Riemann sum approximates the integral of a function by dividing the region under a curve into equal parts and replacing each part with a shape (e.g., rectangles, trapezoids, or parabolas). The area of these shapes is calculated to estimate the integral. This method is useful when finding the exact integral is difficult. Smaller shapes increase accuracy by better matching the curve, and as the size of the shapes approaches zero, the sum converges to the Riemann integral.</p>
+                    <p>\(Area=\sum\limits_{i=1}^{n}f(y_{i})(x_{i}-x_{i-1})\)</p>
+                    <p>You divide the horizontal length under the part of the function you want to evaluate into "n" equal pieces. That is the n on top of the Σ (Greek letter sigma). The (x<sub>i</sub>-x<sub>i-1</sub>) represents the size of one horizontal segment that is created from dividing the whole by the "n". The f(y<sub>i</sub>) is a y value in an "n" segment. Since the area of a rectangle is \({length}\times{width}\), the multiplication of x<sub>i</sub> and f(y<sub>i</sub>) is the area of a rectangle for that part of the graph. The Σ means we add up all of these small rectangles to get an approximation of the area under the segment of a function.</p>
+                </div>
+            </div>
+
+            <div class="topic-integral-background">
+                <div class="topic-content">
+                    <h2>Uses</h2>
+                    <p>Integration helps when trying to multiply units into a problem. For example, if a problem with rate, \(\frac{distance}{time}\), needs an answer with just distance, one solution is to integrate with respect to time. This means multiplying in time to cancel the time in \(\frac{distance}{time}\times{time}\). This is done by adding small slices of the rate graph together. The slices are close to zero in width, but adding them together indefinitely makes them add up to a whole. This is called a Riemann sum.</p>
+                    <p>Adding these slices together gives the equation that the first equation is the derivative of. Integrals are like a way to add many tiny things together by hand. It is like summation, which is adding \(1+2+3+4....+n\). The difference with integration is that we also have to add all the decimals and fractions in between.</p>
+                    <p>Another time integration is helpful is when finding the volume of a solid. It can add two-dimensional (without width) slices of the solid together indefinitely—until there is a width. This means the object now has three dimensions: the original two and a width. This gives the volume of the three-dimensional object described. </p>
+                </div>
+            </div>
+
+            <div class="topic-integral-background">
+                <div class="topic-content">
+                    <h2>Sources</h2>
+                    <p><a href="https://en.wikipedia.org/wiki/Integral">Integral - Wikipedia</a></p>
+                    <p><a href="https://en.wikipedia.org/wiki/Riemann_sum">Riemann sum - Wikipedia</a></p>
+                    <p><a href="https://youtu.be/rfG8ce4nNh0">Integration and the fundamental theorem of calculus | Chapter 8, Essence of calculus</a> from Youtube Channel: <a href="https://www.youtube.com/@3blue1brown">3Blue1Brown</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="alert-popup-overlay" id="alertPopup">
+            <div class="alert-popup-content">
+                <h2 class="alert-title" id="alertTitle">‍</h2>
+                <p class="alert-message" id="alertMessage">‍</p>
+                <button class="alert-popup-ok-button" id="alertPopupOKButton">Okay</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Kalkulukova | Created by <a href="https://github.com/hodakova">hodakova</a></p>
+        </footer>
+
+        <script src="../../scripts/navbar_hamburger_bar.js"></script>
+        <script src="../../scripts/navbar_profile_icon.js" type="module"></script>
+        <script src="../../scripts/topics/integral.js" type="module"></script>
+    </body>
+</html>

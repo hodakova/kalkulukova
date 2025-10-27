@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulukova: Fun with Calculus!</title>
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="icon" type="image/png" href="../../assets/kalkulukova.jpg">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="app-icon-container">
+                    <a href="../home.html">
+                        <img src="../../assets/kalkulukova.jpg" alt="Kalkulukova Icon" class="app-icon">
+                    </a>
+                    <a href="../home.html" class="app-name">Kalkulukova</a>
+                </div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../topics.html">Topics</a></li>
+                    <li><a href="../calculators.html">Calculators</a></li>
+                    <li><a href="../quizzes.html">Quizzes</a></li>
+                    <!--
+                    <li id="navbarRanking" style="display: none;"><a href="../rangking.html">Ranking</a></li>
+                    <li id="navbarProgress" style="display: none;"><a href="../progress.html">Progress</a></li>
+                    -->
+                    <li id="navbarLogin" class="navbar-login" style="display: block"><a href="../login.html">Login</a></li>
+                </ul>
+
+                <div class="right-side-navbar">
+                    <div class="hamburger-menu" id="hamburger-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <a href="../account.html" class="navbar-profile" id="navbarProfile" style="display: none">
+                        <div class="profile-icon-wrapper">
+                            <img src="../../assets/profile.png" alt="Profile Icon" class="profile-icon default" id="profileIcon">
+                        </div>
+                    </a>
+                </div>            
+            </nav>
+        </header>
+
+        <section class="content-section">
+            <h1 class="topic-derivative-title">Kalkulutaufiq: Derivative</h1>
+
+            <div class="topic-derivative-background">
+                <div class="topic-content">
+                    <p>The derivative is a way to show how steep a function is at a given point. Derivatives are similar to the slope of a line, but can be used for other curves as well. It is sometimes called the "instantaneous rate of change" of a function.</p>
+                    <p>More specifically, the derivative is how much a function is changing at one given point. For functions that act on the real numbers, it is the slope of the tangent line at a point on a graph. The derivative is often written as \(\frac{dy}{dx}\) ("dy over dx" or "dy upon dx", meaning the difference in y divided by the difference in x). The d is not a variable, and therefore cannot be cancelled out. Another common notation is \(f'(x)\)—the derivative of function \(f\) at point \(x\), usually read as "\(f\) prime of \(x\)".</p>
+                    <div class="topic-content-media">
+                        <iframe class="topic-content-media-iframe"
+                            src="https://youtube.com/embed/lowavG2SXsQ?si=m4YiBKzzC5avCZyQ" 
+                            title="Derivative Video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-derivative-background">
+                <div class="topic-content">
+                    <h2>Definition</h2>
+                    <p>The derivative of y with respect to x is defined as the change in y over the change in x, as the distance between \(x_{0}\) and \(x_{1}\) becomes infinitely small (infinitesimal). In mathematical terms,</p>
+                    <p>\(f'(a)=\lim\limits_{h\to 0}{\frac {f(a+h)-f(a)}{h}}\)</p>
+                    <p>That is, as the distance between the two x points (h) becomes closer to zero, the slope of the line between them comes closer to resembling a tangent line.</p>
+                </div>
+            </div>
+
+            <div class="topic-derivative-background">
+                <div class="topic-content">
+                    <h2>Uses</h2>
+                    <p>A function's derivative can be used to search for the maxima and minima of the function, by searching for places where its slope is zero.</p>
+                    <p>Derivatives are used in Newton's method, which helps one find the zeros (roots) of a function. One can also use derivatives to determine the concavity of a function, and whether the function is increasing or decreasing.</p>
+                </div>
+            </div>
+
+            <div class="topic-derivative-background">
+                <div class="topic-content">
+                    <h2>Sources</h2>
+                    <p><a href="https://en.wikipedia.org/wiki/Derivative">Derivative - Wikipedia</a></p>
+                    <p><a href="https://youtu.be/lowavG2SXsQ">Calculus | Derivatives of a Function - Lesson 7 | Don't Memorise</a> from Youtube Channel: <a href="https://www.youtube.com/@InfinityLearn_NEET">Infinity Learn NEET</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="alert-popup-overlay" id="alertPopup">
+            <div class="alert-popup-content">
+                <h2 class="alert-title" id="alertTitle">‍</h2>
+                <p class="alert-message" id="alertMessage">‍</p>
+                <button class="alert-popup-ok-button" id="alertPopupOKButton">Okay</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Kalkulukova | Created by <a href="https://github.com/hodakova">hodakova</a></p>
+        </footer>
+
+        <script src="../../scripts/navbar_hamburger_bar.js"></script>
+        <script src="../../scripts/navbar_profile_icon.js" type="module"></script>
+        <script src="../../scripts/topics/derivative.js" type="module"></script>
+    </body>
+</html>

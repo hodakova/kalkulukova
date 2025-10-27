@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulukova: Fun with Calculus!</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="icon" type="image/png" href="../assets/kalkulukova.jpg">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="app-icon-container">
+                    <a href="../index.html">
+                        <img src="../assets/kalkulukova.jpg" alt="Kalkulukova Icon" class="app-icon">
+                    </a>
+                    <a href="../index.html" class="app-name">Kalkulukova</a>
+                </div>
+
+                <div class="nav-index">
+                    <ul class="nav-links">
+                        <li><a href="home.html">Start</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Signup</a></li>
+                    </ul>
+
+                    <div class="right-side-navbar">
+                        <div class="hamburger-menu" id="hamburger-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>  
+                </div>
+            </nav>
+        </header>
+
+        <section class="signup-section">
+            <div class="signup-container">
+                <h1 class="vanilla-h1">Make your acount!</h1>
+                <p class="vanilla-p">Fill up the profile or use Google Account to dive into Kalkulukova: Fun with Calculus!</p>
+                
+                <form action="#" id="signup-form">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+        
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+        
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+        
+                    <div class="signup-name-fields">
+                        <div>
+                            <label for="given-name">Given Name</label>
+                            <input type="text" id="given-name" name="given-name" required>
+                        </div>
+                        
+                        <div>
+                            <label for="family-name">Family Name (Optional)</label>
+                            <input type="text" id="family-name" name="family-name">
+                        </div>
+                    </div>
+
+                    <label for="profile-picture-url">Profile Picture URL (Optional)</label>
+                    <input type="url" id="profile-picture-url" name="profile-picture-url">
+        
+                    <button class="signup-submit-button" type="submit">Signup</button>
+                </form>
+        
+                <div class="signup-separator">or</div>
+        
+                <button id="google-signup-button" class="signin-google">Signup with Google</button>
+
+                <div class="signup-separator">or</div>
+                
+                <a href="login.html" class="button-start">Login to an account</a>
+
+                <div class="signup-separator">or</div>
+                
+                <a href="home.html" class="button-start">Start without an account anyway</a>
+            </div>
+        </section>
+        
+        <section class="alert-popup-overlay" id="alertPopup">
+            <div class="alert-popup-content">
+                <h2 class="alert-title" id="alertTitle">‍</h2>
+                <p class="alert-message" id="alertMessage">‍</p>
+                <button class="alert-popup-ok-button" id="alertPopupOKButton">Okay</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Kalkulukova | Created by <a href="https://github.com/hodakova">hodakova</a></p>
+        </footer>
+
+        <script src="../scripts/navbar_hamburger_bar.js"></script>
+        <script src="../scripts/signup.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulukova: Fun with Calculus!</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="icon" type="image/png" href="../assets/kalkulukova.jpg">
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="app-icon-container">
+                    <a href="../index.html">
+                        <img src="../assets/kalkulukova.jpg" alt="Kalkulukova Icon" class="app-icon">
+                    </a>
+                    <a href="../index.html" class="app-name">Kalkulukova</a>
+                </div>
+
+                <div class="nav-index">
+                    <ul class="nav-links">
+                        <li><a href="home.html">Start</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Signup</a></li>
+                    </ul>
+
+                    <div class="right-side-navbar">
+                        <div class="hamburger-menu" id="hamburger-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>  
+                </div>
+            </nav>
+        </header>
+
+        <section class="signup-section">
+            <div class="signup-container">
+                <h1 class="vanilla-h1">Enter your acount!</h1>
+                <p class="vanilla-p">Let's dive into your fun learning platform for calculus concepts, Kalkulukova!</p>
+                
+                <form action="#" id="signup-form">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+        
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+        
+                    <button class="signup-submit-button" type="submit">Login</button>
+                </form>
+        
+                <div class="signup-separator">or</div>
+        
+                <button id="google-login-button" class="signin-google">Login with Google</button>
+
+                <div class="signup-separator">or</div>
+
+                <a href="signup.html" class="button-start">Make an account</a>
+
+                <div class="signup-separator">or</div>
+
+                <a href="home.html" class="button-start">Start without an account anyway</a>
+            </div>
+        </section>
+
+        <section class="alert-popup-overlay" id="alertPopup">
+            <div class="alert-popup-content">
+                <h2 class="alert-title" id="alertTitle">‍</h2>
+                <p class="alert-message" id="alertMessage">‍</p>
+                <button class="alert-popup-ok-button" id="alertPopupOKButton">Okay</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Kalkulukova | Created by <a href="https://github.com/hodakova">hodakova</a></p>
+        </footer>
+
+        <script src="../scripts/navbar_profile_icon.js" type="module"></script>
+        <script src="../scripts/login.js" type="module"></script>
+    </body>
+</html>

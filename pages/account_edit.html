@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulukova: Fun with Calculus!</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="icon" type="image/png" href="../assets/kalkulukova.jpg">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="app-icon-container">
+                    <a href="home.html">
+                        <img src="../assets/kalkulukova.jpg" alt="Kalkulukova Icon" class="app-icon">
+                    </a>
+                    <a href="home.html" class="app-name">Kalkulukova</a>
+                </div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="calculators.html">Calculators</a></li>
+                    <li><a href="quizzes.html">Quizzes</a></li>
+                    <!--
+                    <li id="navbarRanking" style="display: none"><a href="ranking.html">Ranking</a></li>
+                    <li id="navbarProgress" style="display: none"><a href="progress.html">Progress</a></li>
+                    -->
+                    <li id="navbarLogin" class="navbar-login" style="display: block"><a href="login.html">Login</a></li>
+                </ul>
+
+                <div class="right-side-navbar">
+                    <div class="hamburger-menu" id="hamburger-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <a href="account.html" class="navbar-profile" id="navbarProfile" style="display: none">
+                        <div class="profile-icon-wrapper">
+                            <img src="../assets/profile.png" alt="Profile Icon" class="profile-icon default" id="profileIcon">
+                        </div>
+                    </a>
+                </div>            
+            </nav>
+        </header>
+
+        <section class="profile-section">
+            <h1 class="vanilla-h1">Kalkulukuenta: Kalkulukova Account Membership</h1>
+            <p class="vanilla-p">Personalise your account!</p>
+
+            <form action="#" id="profile-edit-form" class="profile-card">
+                <p class="profile-card-title">Kalkulukuenta Membership</p>
+                <div class="profile-card-content">
+                    <div class="profile-left">
+                        <div class="profile-picture-background">
+                            <img src="../assets/profile.png" alt="Profile Picture" class="profile-picture default" id="profilePicture">
+                        </div>
+                        <div class="profile-left-content-edit">
+                            <label for="profile-picture-url">Profile Picture URL</label>
+                            <input type="url" id="profile-picture-url" class="profile-picture-url-input" name="profile-picture-url">
+                        </div>
+                        <p id="joined-date" class="joined-date normal">Joined since<br>‍</p>
+                        <div class="joined-date-responsive profile-left-content-edit">
+                            <label>Joined since</label>
+                            <p style="margin-left: .8rem" id="joined-date-responsive">date</p>
+                        </div>
+                    </div>
+                    <div class="profile-right edit">
+                        <div class="signup-name-fields">
+                            <div>
+                                <label for="given-name">Given Name</label>
+                                <input type="text" id="given-name" name="given-name" required>
+                            </div>
+                            <div>
+                                <label for="family-name">Family Name</label>
+                                <input type="text" id="family-name" name="family-name">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <p style="margin-left: .8rem" id="email">email</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-edit-action-buttons signup-name-fields">
+                    <a href="account.html" class="profile-edit-cancel-button">Cancel</a>
+                    <button type="submit" class="profile-edit-save-button">Save</button>
+                </div>
+            </form>
+            <button id="reset-password" class="logout-button" style="display: none">Reset Password</button>
+        </section>
+
+        <section class="alert-popup-overlay" id="alertPopup">
+            <div class="alert-popup-content">
+                <h2 class="alert-title" id="alertTitle">‍</h2>
+                <p class="alert-message" id="alertMessage">‍</p>
+                <button class="alert-popup-ok-button" id="alertPopupOKButton">Okay</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Kalkulukova | Created by <a href="https://github.com/hodakova">hodakova</a></p>
+        </footer>
+
+        <script src="../scripts/navbar_hamburger_bar.js"></script>
+        <script src="../scripts/navbar_profile_icon.js" type="module"></script>
+        <script src="../scripts/account_edit.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulukova: Fun with Calculus!</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="assets/kalkulukova_icon.png">
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <header>
+            <nav class="navbar">
+                <div class="app-icon-container">
+                    <a href="index.html">
+                        <img src="assets/kalkulukova.jpg" alt="Kalkulukova Icon" class="app-icon">
+                    </a>
+                    <a href="index.html" class="app-name">Kalkulukova</a>
+                </div>   
+                
+                <div class="nav-index">
+                    <ul class="nav-links">
+                        <li><a href="pages/home.html">Start</a></li>
+                        <li><a href="pages/login.html">Login</a></li>
+                        <li><a href="pages/signup.html">Signup</a></li>
+                    </ul>
+
+                    <div class="right-side-navbar">
+                        <div class="hamburger-menu" id="hamburger-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>  
+                </div>   
+            </nav>
+        </header>
+
+        <!-- Landing Section -->
+        <section class="home-section">
+            <div class="home-content">
+                <div class="home-content-left-side">
+                    <img src="assets/kalkulukova.jpg" alt="Kalkulukova Logo" class="home-app-logo">
+                </div>
+
+                <div class="home-content-right-side">
+                    <h1 class="home-title">Fun with Calculus!</h1>
+
+                    <div class="index-entry-buttons">
+                        <a href="pages/home.html" class="index-button home-button">Get started</a>
+                        <a href="pages/login.html" class="index-button login-button">I Already have an account</a>
+                        <a href="pages/signup.html" class="index-button login-button">Make an account!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alert Popup Section -->
+        <section class="alert-popup-overlay" id="alertPopup">
+            <div class="alert-popup-content">
+                <h2 class="alert-title" id="alertTitle">‍</h2>
+                <p class="alert-message" id="alertMessage">‍</p>
+                <button class="alert-popup-ok-button" id="alertPopupOKButton">Okay</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Kalkulukova | Created by <a href="https://github.com/hodakova">hodakova</a></p>
+        </footer>
+
+        <script src="scripts/navbar_hamburger_bar.js"></script>
+        <script src="scripts/alert_popup.js" type="module"></script>
+    </body>
+</html>

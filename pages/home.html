@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulukova: Fun with Calculus!</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="icon" type="image/png" href="../assets/kalkulukova.jpg">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="app-icon-container">
+                    <a href="home.html">
+                        <img src="../assets/kalkulukova.jpg" alt="Kalkulukova Icon" class="app-icon">
+                    </a>
+                    <a href="home.html" class="app-name">Kalkulukova</a>
+                </div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="calculators.html">Calculators</a></li>
+                    <li><a href="quizzes.html">Quizzes</a></li>
+                    <!--
+                    <li id="navbarRanking" style="display: none"><a href="ranking.html">Ranking</a></li>
+                    <li id="navbarProgress" style="display: none"><a href="progress.html">Progress</a></li>
+                    -->
+                    <li id="navbarLogin" class="navbar-login" style="display: block"><a href="login.html">Login</a></li>
+                </ul>
+
+                <div class="right-side-navbar">
+                    <div class="hamburger-menu" id="hamburger-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <a href="account.html" class="navbar-profile" id="navbarProfile" style="display: none">
+                        <div class="profile-icon-wrapper">
+                            <img src="../assets/profile.png" alt="Profile Icon" class="profile-icon default" id="profileIcon">
+                        </div>
+                    </a>
+                </div>            
+            </nav>
+        </header>
+
+        <section class="home-section">
+            <div class="home-wrapper">
+                <div class="home-content">
+
+                    <div class="home-content-left-side">
+                        <img src="../assets/kalkulukova.jpg" alt="Kalkulukova Logo" class="home-app-logo">
+                    </div>
+
+                    <div class="home-content-right-side">
+                        <h1 class="home-title">Fun with Calculus!</h1>
+                        <div class="home-description">
+                            <p id="homeDescription">Welcome to Kalkulukova, Your fun learning platform for calculus concepts!</p>
+                            <p>Dive into limits, derivatives, and integrals in an interactive way.</p>
+                            <p>Have fun!!!</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="home-explore">
+                    <p class="vanilla-p" style="margin-bottom: 0;">Let start dive into some cool and interactive Kalkulukova's features!</p>
+                    
+                    <div class="learn-container">
+                        <a href="topics.html">
+                            <div class="learn-item home-explore-topics-item">
+                                <img src="../assets/kalkulutaufiq.jpg" alt="Topics" class="learn-img">
+                                <h2 class="home-explore-topics-title">Kalkulutaufiq</h2>
+                            </div>
+                        </a>
+        
+                        <a href="calculators.html">
+                            <div class="learn-item home-explore-calculators-item">
+                                <img src="../assets/kalkulukalkulator.jpg" alt="Calculators" class="learn-img">
+                                <h2 class="home-explore-calculators-title" style="font-size: 22px">Kalkulukalkulator</h2>
+                            </div>
+                        </a>
+        
+                        <a href="quiz.html">
+                            <div class="learn-item home-explore-quizz-item">
+                                <img src="../assets/kalkulukuizz.jpg" alt="Quizzes" class="learn-img">
+                                <h2 class="home-explore-quizz-title">Kalkulukuizz</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <!--
+                    <div class="learn-container" id="homeExploreLogin" style="display: none">
+                        <a href="ranking.html">
+                            <div class="learn-item home-explore-ranking-item">
+                                <img src="../assets/kalkulurank.jpg" alt="Ranking" class="learn-img">
+                                <h2 class="home-explore-ranking-title">Kalkulurank</h2>
+                            </div>
+                        </a>
+
+                        <a href="progress.html">
+                            <div class="learn-item home-explore-progress-item">
+                                <img src="../assets/kalkuluprogresso.jpg" alt="Progress" class="learn-img">
+                                <h2 class="home-explore-progress-title" style="font-size: 22px;">Kalkuluprogresso</h2>
+                            </div>
+                        </a>
+        
+                        <a href="account.html">
+                            <div class="learn-item home-explore-profile-item">
+                                <img src="../assets/kalkuluakun.jpg" alt="Account" class="learn-img">
+                                <h2 class="home-explore-profile-title">Kalkulukuenta</h2>
+                            </div>
+                        </a>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
+
+        <section class="alert-popup-overlay" id="alertPopup">
+            <div class="alert-popup-content">
+                <h2 class="alert-title" id="alertTitle">‍</h2>
+                <p class="alert-message" id="alertMessage">‍</p>
+                <button class="alert-popup-ok-button" id="alertPopupOKButton">Okay</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Kalkulukova | Created by <a href="https://github.com/hodakova">hodakova</a></p>
+        </footer>
+        
+        <script src="../scripts/navbar_hamburger_bar.js"></script>
+        <script src="../scripts/navbar_profile_icon.js" type="module"></script>
+        <script src="../scripts/home.js" type="module"></script>
+    </body>
+</html>

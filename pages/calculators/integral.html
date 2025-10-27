@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulukova: Fun with Calculus!</title>
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="icon" type="image/png" href="../../assets/kalkulukova.jpg">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://unpkg.com/algebrite@1.4.0/dist/algebrite.bundle-for-browser.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/gh/jiggzson/nerdamer@master/nerdamer.core.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/jiggzson/nerdamer@master/Algebra.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/jiggzson/nerdamer@master/Calculus.js"></script> -->
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="app-icon-container">
+                    <a href="../home.html">
+                        <img src="../../assets/kalkulukova.jpg" alt="Kalkulukova Icon" class="app-icon">
+                    </a>
+                    <a href="../home.html" class="app-name">Kalkulukova</a>
+                </div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../topics.html">Topics</a></li>
+                    <li><a href="../calculators.html">Calculators</a></li>
+                    <li><a href="../quizzes.html">Quizzes</a></li>
+                    <!--
+                    <li id="navbarRanking" style="display: none;"><a href="../rangking.html">Ranking</a></li>
+                    <li id="navbarProgress" style="display: none;"><a href="../progress.html">Progress</a></li>
+                    -->
+                    <li id="navbarLogin" class="navbar-login" style="display: block"><a href="../login.html">Login</a></li>
+                </ul>
+
+                <div class="right-side-navbar">
+                    <div class="hamburger-menu" id="hamburger-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <a href="../account.html" class="navbar-profile" id="navbarProfile" style="display: none">
+                        <div class="profile-icon-wrapper">
+                            <img src="../../assets/profile.png" alt="Profile Icon" class="profile-icon default" id="profileIcon">
+                        </div>
+                    </a>
+                </div>            
+            </nav>
+        </header>
+
+        <section class="content-section">
+            <h1 class="topic-integral-title">Kalkulukalkulator: Integral</h1>
+
+            <div class="topic-integral-background" style="padding-bottom: 15.69px">
+                <div class="topic-content">
+                    <div class="calculator" id="integral">
+                        <div class="calculator-action">
+                            <div class="calculator-input-container">
+                                <label class="cal" for="integral-function">Function</label>
+                                <label class="eq" for="integral-function">f(x)</label>
+
+                                <input type="text" id="integral-function" placeholder="(e.g., x^2)">
+                            </div>
+
+                            <div class="calculator-input-container">
+                                <label class="cal" for="integral-lower">Lower bound</label>
+                                <label class="eq" for="integral-lower">Lower</label>
+
+                                <input type="text" id="integral-lower" placeholder="(e.g., 0, 1/2)">
+                            </div>
+
+                            <div class="calculator-input-container">
+                                <label class="cal" for="integral-upper">Upper bound</label>
+                                <label class="eq" for="integral-upper">Upper</label>
+
+                                <input type="text" id="integral-upper" placeholder="(e.g., 1, 3/2)">
+                            </div>
+    
+                            <button id="calculate-integral">
+                                <p class="cal">Calculate Integral</p>
+                                <p class="eq">=</p>
+                            </button>
+                        </div>
+
+                        <div id="integral-result-function" class="calculator-result">‎</div>
+                        <div id="integral-result" class="calculator-result">‎</div>
+
+                        <p class="calculator-result-graph-title">Graph:</p>
+                        <div class="calculator-result-graph-wrapper" style="margin-bottom: 1.5rem">
+                            <canvas class="calculator-result-graph" id="integral-graph"></canvas>
+                            <div class="calculator-result-graph-placeholder" id="integral-graph-placeholder">
+                                <p class="integral-title">Function Graph</p>
+                            </div>
+                        </div>
+                        <div class="calculator-result-graph-wrapper">
+                            <canvas class="calculator-result-graph" id="integrated-graph"></canvas>
+                            <div class="calculator-result-graph-placeholder" id="integrated-graph-placeholder">
+                                <p class="integral-title">Integrated Function Graph</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-integral-background" id="history" style="display: none">
+                <div class="topic-content">
+                    <h2>History</h2>
+                    <div class="calculator-history-item-container" id="historyItemContainer"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="alert-popup-overlay" id="alertPopup">
+            <div class="alert-popup-content">
+                <h2 class="alert-title" id="alertTitle">‍</h2>
+                <p class="alert-message" id="alertMessage">‍</p>
+                <button class="alert-popup-ok-button" id="alertPopupOKButton">Okay</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Kalkulukova | Created by <a href="https://github.com/hodakova">hodakova</a></p>
+        </footer>
+
+        <script src="../../scripts/navbar_hamburger_bar.js"></script>
+        <script src="../../scripts/navbar_profile_icon.js" type="module"></script>
+        <script src="../../scripts/calculator.js" type="module"></script>
+    </body>
+</html>

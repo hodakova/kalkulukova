@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulukova: Fun with Calculus!</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="icon" type="image/png" href="../assets/kalkulukova.jpg">
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="app-icon-container">
+                    <a href="home.html">
+                        <img src="../assets/kalkulukova.jpg" alt="Kalkulukova Icon" class="app-icon">
+                    </a>
+                    <a href="home.html" class="app-name">Kalkulukova</a>
+                </div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="calculators.html">Calculators</a></li>
+                    <li><a href="quizzes.html">Quizzes</a></li>
+                    <!--
+                    <li id="navbarRanking" style="display: none"><a href="ranking.html">Ranking</a></li>
+                    <li id="navbarProgress" style="display: none"><a href="progress.html">Progress</a></li>
+                    -->
+                    <li id="navbarLogin" class="navbar-login" style="display: block"><a href="login.html">Login</a></li>
+                </ul>
+
+                <div class="right-side-navbar">
+                    <div class="hamburger-menu" id="hamburger-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <a href="account.html" class="navbar-profile" id="navbarProfile" style="display: none">
+                        <div class="profile-icon-wrapper">
+                            <img src="../assets/profile.png" alt="Profile Icon" class="profile-icon default" id="profileIcon">
+                        </div>
+                    </a>
+                </div>            
+            </nav>
+        </header>
+
+        <section class="learn-section">
+            <h1 class="vanilla-h1">Kalkulutaufiq: Explore Calculus Topics</h1>
+            <p class="vanilla-p">Select a topic below to start diving into calculus concepts like limits, derivatives, and integrals.</p>
+
+            <div class="learn-container">
+                <a href="topics/limit.html">
+                    <div class="learn-item limit-item">
+                        <img src="../assets/limit.jpg" alt="Limit" class="learn-img">
+                        <h2 class="limit-title">Limit</h2>
+                    </div>
+                </a>
+
+                <a href="topics/derivative.html">
+                    <div class="learn-item derivative-item">
+                        <img src="../assets/derivative.jpg" alt="Derivative" class="learn-img">
+                        <h2 class="derivative-title">Derivative</h2>
+                    </div>
+                </a>
+
+                <a href="topics/integral.html">
+                    <div class="learn-item integral-item">
+                        <img src="../assets/integral.jpg" alt="Integral" class="learn-img">
+                        <h2 class="integral-title">Integral</h2>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Kalkulukova | Created by <a href="https://github.com/hodakova">hodakova</a></p>
+        </footer>
+
+        <script src="../scripts/navbar_hamburger_bar.js"></script>
+        <script src="../scripts/navbar_profile_icon.js" type="module"></script>
+    </body>
+</html>

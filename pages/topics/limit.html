@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulukova: Fun with Calculus!</title>
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="icon" type="image/png" href="../../assets/kalkulukova.jpg">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="app-icon-container">
+                    <a href="../home.html">
+                        <img src="../../assets/kalkulukova.jpg" alt="Kalkulukova Icon" class="app-icon">
+                    </a>
+                    <a href="../home.html" class="app-name">Kalkulukova</a>
+                </div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../topics.html">Topics</a></li>
+                    <li><a href="../calculators.html">Calculators</a></li>
+                    <li><a href="../quizzes.html">Quizzes</a></li>
+                    <!--
+                    <li id="navbarRanking" style="display: none;"><a href="../rangking.html">Ranking</a></li>
+                    <li id="navbarProgress" style="display: none;"><a href="../progress.html">Progress</a></li>
+                    -->
+                    <li id="navbarLogin" class="navbar-login" style="display: block"><a href="../login.html">Login</a></li>
+                </ul>
+
+                <div class="right-side-navbar">
+                    <div class="hamburger-menu" id="hamburger-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <a href="../account.html" class="navbar-profile" id="navbarProfile" style="display: none">
+                        <div class="profile-icon-wrapper">
+                            <img src="../../assets/profile.png" alt="Profile Icon" class="profile-icon default" id="profileIcon">
+                        </div>
+                    </a>
+                </div>            
+            </nav>
+        </header>
+
+        <section class="content-section">
+            <h1 class="topic-limit-title">Kalkulutaufiq: Limit</h1>
+
+            <div class="topic-limit-background">
+                <div class="topic-content">
+                    <p>A limit is the value that a function comes close to as the input comes close to some value. When we use a function to solve a problem, sometimes certain values can not be used as inputs to the function, but we can see what the function comes close to when the input comes close to the value. Limits can be used to explain what happens in these cases.</p>
+                    
+                    <div class="topic-content-media">
+                        <iframe class="topic-content-media-iframe"
+                            src="https://youtube.com/embed/h_Rf_2OeSJU?si=tinRVnDwH7meiq6z" 
+                            title="Limit Video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic-limit-background">
+                <div class="topic-content">
+                    <h2>Definition</h2>
+                    <p>Let \(f(x)\) be a function defined on an interval that contains \(x=a\), except possibly at \(x=a\). Then we say that,</p>
+                    <p>\(\lim\limits_{x\to a}{f(x)=L}\), which reads "the limit of \(f\) of \(x\), as \(x\) approaches \(c\) equals \(L\)".</p>
+                    <p>if for every number \(ε>0\) there is some number \(δ>0\) such that</p>
+                    <p>\(|f(x)−L|<ε\) whenever \(0<|x−a|<δ\)</p>
+                </div>
+            </div>
+
+            <div class="topic-limit-background">
+                <div class="topic-content">
+                    <h2>Uses</h2>
+                    <p>Limits are used to approximate values that a function or sequence approaches as the input approaches a certain value.</p>
+                    <p>Limits are also used in many real-world applications, including engineering, physics, economics, and more. They help us understand how systems change over time and how functions behave as they approach a specific point.</p>
+                </div>
+            </div>
+
+            <div class="topic-limit-background">
+                <div class="topic-content">
+                    <h2>Sources</h2>
+                    <p><a href="https://en.wikipedia.org/wiki/Limit_(mathematics)">Limits (mathematics) - Wikipedia</a></p>
+                    <p><a href="https://tutorial.math.lamar.edu/classes/calcI/defnoflimit.aspx">Calculus I - The Definition of the Limit</a></p>
+                    <p><a href="https://youtu.be/h_Rf_2OeSJU">Calculus - The limit of a function</a> from Youtube Channel: <a href="https://www.youtube.com/@MySecretMathTutor">MySecretMathTutor</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="alert-popup-overlay" id="alertPopup">
+            <div class="alert-popup-content">
+                <h2 class="alert-title" id="alertTitle">‍</h2>
+                <p class="alert-message" id="alertMessage">‍</p>
+                <button class="alert-popup-ok-button" id="alertPopupOKButton">Okay</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Kalkulukova | Created by <a href="https://github.com/hodakova">hodakova</a></p>
+        </footer>
+    
+        <script src="../../scripts/navbar_hamburger_bar.js"></script>
+        <script src="../../scripts/navbar_profile_icon.js" type="module"></script>
+        <script src="../../scripts/topics/limit.js" type="module"></script>
+    </body>
+</html>
