@@ -79,15 +79,22 @@ document.getElementById("google-signup-button").addEventListener("click", async 
         const userRef = ref(database, `users/${user.uid}`);
         const snapshot = await get(userRef);
 
+        const baseUsername = user.email.split("@")[0];
+        let finalUsername = baseUsername;
+
+        const nameParts = (user.displayName || "").trim().split(" ").filter(Boolean);
+        const nameGiven = nameParts[0];
+        const nameFamily = nameParts.length > 1 ? nameParts[nameParts.length - 1] : "";
+
         if (!snapshot.exists()) {
-            username = await generateUniqueUsername(username);
+            finalUsername = await generateUniqueUsername(baseUsername);
 
             await set(userRef, {
                 uid: user.uid,
-                username: user.email.split("@")[0],
+                username: finalUsername,
                 email: user.email,
-                nameGiven: user.displayName.split(" ")[0],
-                nameFamily: user.displayName.split(" ")[1],
+                nameGiven: nameGiven,
+                nameFamily: nameFamily,
                 profilePicture: user.photoURL,
                 createdAt: new Date().toISOString()
             });
